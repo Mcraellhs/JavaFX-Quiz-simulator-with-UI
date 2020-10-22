@@ -96,7 +96,7 @@ bazAns();
         String qry="SELECT odgovor FROM pitanja;";
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/kviz","root","ahmedinho1");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/kviz","root","admin123");
             Statement statement = connection.createStatement();
             ResultSet rs    = statement.executeQuery(qry);
             while (rs.next()) {
